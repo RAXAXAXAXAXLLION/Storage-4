@@ -5,4 +5,4 @@ res.end()
 }).listen(process.env.PORT||3000)
 require("nodejs-websocket").createServer((w)=>{
 
-}).listen("8888")
+}).listen(process.env.PORT||3000)
