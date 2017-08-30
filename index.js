@@ -6,5 +6,5 @@ res.write('<script>io().on("msg",(e)=>{eval(e.script)})</script>')
 res.end()
 }).listen(process.env.PORT||3000)
 ).on("connection",(w)=>{
-w.emit("msg",{script:'alert("Scripting works!")'})
+w.emit("msg",{script:'alert("socket.io works!")'})
 })
